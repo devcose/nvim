@@ -32,12 +32,10 @@ keymap("n", "<C-Down>", ":resize -2<CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize +2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize -2<CR>", opts)
 
--- splits and tab navigation -- 
+-- splits and tab navigation --
 keymap("n", "<C-i>", ":vsplit<CR>", opts)
 keymap("n", "<C-o>", ":split<CR>", opts)
 keymap("n", "<C-w>", ":q<CR>", opts)
-
-
 
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
@@ -48,9 +46,11 @@ keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
 -- Insert --
--- Press jk fast to exit insert mode 
+-- Press jk fast to exit insert mode
 keymap("i", "jk", "<ESC>", opts)
 keymap("i", "kj", "<ESC>", opts)
+keymap("i", "JK", "<ESC>", opts)
+keymap("i", "KJ", "<ESC>", opts)
 
 -- Visual --
 -- Stay in indent mode
@@ -69,7 +69,7 @@ keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
--- Commenting --   
+-- Commenting --
 keymap("v", "<C-/>", "gc", opts)
 
 -- Terminal --
@@ -78,4 +78,3 @@ keymap("v", "<C-/>", "gc", opts)
 -- keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
 -- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 -- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
-
