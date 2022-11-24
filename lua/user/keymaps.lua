@@ -41,7 +41,17 @@ keymap("n", "<C-w>", ":q<CR>", opts)
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
--- Move text up and downg
+-- Navigate Lines --
+keymap("n", "mm", "^", opts)
+keymap("n", "ml", "$", opts)
+keymap("n", "mk", "gg", opts)
+keymap("n", "mj", "G", opts)
+keymap("v", "mm", "^", opts)
+keymap("v", "ml", "$", opts)
+keymap("v", "mk", "gg", opts)
+keymap("v", "mj", "G", opts)
+
+-- Move text up and down --
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
