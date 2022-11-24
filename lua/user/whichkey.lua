@@ -126,6 +126,7 @@ local mappings = {
       "<cmd>Gitsigns diffthis HEAD<cr>",
       "Diff",
     },
+--    g = { "<cmd>lua vim.lsp.diagnostic.show_line_dagnostics()<CR>", "sho"}
   },
 
   l = {
